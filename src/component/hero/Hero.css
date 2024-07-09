@@ -1,0 +1,70 @@
+.container {
+  max-width: 95%;
+  margin: 175px auto 173.19px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  color: #010101;
+  font-family: Poppins;
+  font-size: 74.8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+}
+
+.hero-content p {
+  color: #606060;
+  font-family: Poppins;
+  font-size: 33.6px;
+  width: 70%;
+
+  font-weight: 500;
+}
+
+.view-details {
+  display: flex;
+  padding: 12.6px 25.2px;
+  align-items: center;
+  border-radius: 8.4px;
+  background: #163b5c;
+  gap: 10px;
+}
+
+.btn-hero {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 25.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: #163b5c;
+  text-transform: capitalize;
+  border: none;
+}
+
+.hero-mat {
+  background-image: url("../../asset/images/vector-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30%;
+  right: 2%;
+}
+
+.hero-mat img {
+  padding: 8em;
+  margin-top: -3em;
+}

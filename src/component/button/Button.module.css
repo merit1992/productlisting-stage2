@@ -1,0 +1,14 @@
+.btn_primary {
+  display: flex;
+  padding: 12.6px 25.2px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #033f63;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 33.6px;
+  border: none;
+  font-weight: 700;
+}

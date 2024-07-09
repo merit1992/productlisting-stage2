@@ -1,0 +1,42 @@
+.opacity {
+  opacity: 0.5;
+  background: rgba(140, 134, 134, 0.4);
+  position: relative;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 4em 2em;
+  max-width: 700px;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  z-index: 2;
+}
+
+.close {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(140, 134, 134, 0.4);
+  padding: 0.3em;
+}
+
+.modal_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34.562px;
+  /* max-width: 881px; */
+}
+
+.modal_flex h3 {
+  color: #000;
+  font-size: 34.562px;
+  font-weight: 700;
+}
+
+.modal_flex p {
+  width: 70%;
+}

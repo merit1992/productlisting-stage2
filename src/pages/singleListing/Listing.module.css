@@ -1,0 +1,253 @@
+.wrapper {
+  max-width: 95%;
+  margin: 14px auto 0;
+}
+
+.bgShoe {
+  background: url("../../asset/images/BgBig.svg");
+  background-repeat: no-repeat;
+  background-position: 200px -100px;
+  position: relative;
+}
+
+.shoeShow {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.smBg {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+
+.detailsShip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: -30em;
+}
+
+.shoeDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 25.2px;
+}
+
+.description h2 {
+  color: #010101;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.description h4 {
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.shoeDetails span {
+  color: #033f63;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.starReview span {
+  color: #b8b8b8;
+  font-family: Inter;
+  font-size: 16.8px;
+  font-weight: 700;
+}
+
+.starReview {
+  display: flex;
+  align-items: center;
+  gap: 33.6px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 2.1px;
+}
+
+.ship h3 {
+  color: #b8b8b8;
+  font-size: 21px;
+  font-weight: 400;
+  margin: -12.6px 0 25.2px;
+}
+
+.ship p {
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.color {
+  display: flex;
+  align-items: flex-start;
+  gap: 4.2px;
+  margin: 8.4px 0 33.6px;
+}
+
+.color div {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.purple {
+  background: #ea44d9;
+}
+.red {
+  background: #d62525;
+}
+.green {
+  background: #a6e951;
+}
+.lightBlue {
+  background: #4ce1f6;
+}
+.deepBlue {
+  background: #2a76e9;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 12.6px;
+}
+
+.share p {
+  color: #616161;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9.45px;
+  margin: 74px 0;
+}
+
+.size h4 {
+  color: #010101;
+  font-size: 25.2px;
+  font-weight: 500;
+}
+
+.numbers {
+  display: flex;
+  background: #f8f8f8;
+}
+
+.numbers span {
+  padding: 10.5px 36.75px;
+  color: #e8604c;
+  font-size: 25.2px;
+  font-weight: 500;
+  line-height: 37.8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 74.15px;
+}
+
+.otherProducts h3 {
+  color: #010101;
+  font-size: 33.6px;
+  font-weight: 700;
+  margin-bottom: 23.1px;
+}
+
+.eclipse {
+  width: 57.75px;
+  height: 57.75px;
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 50%;
+  opacity: 0.8;
+  position: absolute;
+  top: 70%;
+  left: 93%;
+}
+
+.arrowRight {
+  transform: rotate(88.453deg);
+  margin: 1em;
+}
+
+.imageRender {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.imageFlex {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProdDetails {
+  background: #163b5c;
+  width: 100%;
+  padding: 25.2px 0 75.6px;
+}
+
+.ProdDetailsDescription {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 196px;
+}
+
+.details p {
+  color: #f8f8f8;
+  text-align: justify;
+  font-size: 22.2px;
+  font-weight: 500;
+}
+
+.details p span {
+  font-size: 33.6px;
+  margin-top: 2em;
+}
+
+.ProdDetailsDescription div h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.discount {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12.6px;
+  border-radius: 4px;
+  border: 0.525px solid #fff;
+}
+
+.discountnumber {
+  display: flex;
+  padding: 74.55px 48.3px;
+  align-items: flex-start;
+  gap: -1.05px;
+  background: #f8f8f8;
+}
+
+.discountD p {
+  color: #fff;
+  font-size: 25.2px;
+  font-weight: 500;
+  line-height: 37.8px;
+}

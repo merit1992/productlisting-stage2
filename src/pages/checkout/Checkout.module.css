@@ -1,0 +1,94 @@
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-align: center;
+  color: #333;
+  font-size: 29.003px;
+  font-weight: 600;
+}
+
+.payment_method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40.79px;
+}
+
+.transfer,
+.paypal,
+.month {
+  display: flex;
+  align-items: center;
+  gap: 4.2px;
+  border-radius: 10px;
+  padding: 19.34px 38.67px;
+}
+
+.transfer,
+.paypal {
+  background: rgba(22, 59, 92, 0.29);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 62px;
+  margin-top: 92.1px;
+}
+
+label {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19.335px;
+}
+
+.input {
+  border-radius: 5px;
+  border: 1.208px solid rgba(51, 51, 51, 0.5);
+  width: 866.454px;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.period_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.period_div h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.month,
+.empty {
+  background: #ebebeb;
+}
+
+.empty {
+  width: 230.19px;
+  height: 67.673px;
+}
+
+.btn {
+  margin: 202.31px 0 162px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
