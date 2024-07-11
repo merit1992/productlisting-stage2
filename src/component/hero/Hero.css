@@ -1,8 +1,12 @@
 .container {
   max-width: 95%;
   margin: 175px auto 173.19px;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
 }
 
 .hero-content {
@@ -11,8 +15,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  flex-shrink: 0;
-  z-index: 2;
+  width: 85%;
 }
 
 .hero-content h1 {
@@ -22,16 +25,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 100%;
 }
 
 .hero-content p {
   color: #606060;
-  font-family: Poppins;
   font-size: 33.6px;
-  width: 70%;
-
   font-weight: 500;
+  width: 70%;
 }
 
 .view-details {
@@ -55,16 +55,74 @@
   border: none;
 }
 
-.hero-mat {
-  background-image: url("../../asset/images/vector-bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 30%;
-  right: 2%;
+.vector-bg {
+  max-width: 100%;
 }
 
-.hero-mat img {
-  padding: 8em;
-  margin-top: -3em;
+.hero-mat {
+  position: relative;
+}
+
+.hero-img {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  max-width: 100%;
+}
+
+/* media query for tab should start from 700-1300px while mobile take the smallest but bigger screen start from 1301 */
+/* tab here */
+@media (max-width: 1100px) {
+  .hero-content h1 {
+    font-size: 39.727px;
+  }
+
+  .hero-content p {
+    font-size: 17.845px;
+  }
+
+  .btn-hero {
+    padding: 6.692px 13.384px;
+  }
+}
+
+/* mobile here */
+@media (max-width: 429px) {
+  .container {
+    border: 2px solid blue;
+    margin: 28.86px auto 9.6px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    border: 2px solid red;
+  }
+  .hero-content {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 23.311px;
+  }
+  .hero-content p {
+    font-size: 10.471px;
+  }
+  .btn-hero {
+    padding: 3.929px 7.859px;
+  }
+
+  .hero-img {
+    max-width: 100.256px;
+    height: auto;
+    top: 25%;
+    left: 25%;
+  }
+
+  .vector-bg {
+    max-width: 204.501px;
+    height: auto;
+  }
 }

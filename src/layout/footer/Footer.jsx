@@ -96,8 +96,12 @@ function Footer() {
             </div>
             <p>Subscribe to our newsletter</p>
             <form className={style.formSub}>
-              <input type="text" placeholder="Your email" />
-              <button>subscribe</button>
+              <input
+                className={style.input}
+                type="text"
+                placeholder="Your email"
+              />
+              <button className={style.btn_sub}>Subscribe</button>
             </form>
           </div>
         </div>

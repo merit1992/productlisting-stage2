@@ -25,6 +25,7 @@ import { Link } from "react-router-dom";
 
 const productsArray = [
   {
+    id: 1,
     image: blackshoe,
     productTitle: "Unisex Sneakers",
     productPrice: "$70.45",
@@ -32,6 +33,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 2,
     image: sneaker2,
     productTitle: "Female Sneaker",
     productPrice: "$67.99",
@@ -39,6 +41,7 @@ const productsArray = [
     review: 2,
   },
   {
+    id: 3,
     image: sneaker3,
     productTitle: "Female Sneakers",
     productPrice: "$45.0",
@@ -46,6 +49,7 @@ const productsArray = [
     review: 23,
   },
   {
+    id: 4,
     image: sneaker4,
     productTitle: "Male brown boots",
     productPrice: "$100.99",
@@ -53,6 +57,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 5,
     image: sneaker5,
     productTitle: "Fila envizion unisex shoe",
     productPrice: "$120.55",
@@ -60,6 +65,7 @@ const productsArray = [
     review: 17,
   },
   {
+    id: 6,
     image: sneaker6,
     productTitle: "Nike Air Max9 unisex shoe",
     productPrice: "$140.55",
@@ -67,6 +73,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 7,
     image: FLaceUp,
     productTitle: "female Lace up boots",
     productPrice: "$175.45",
@@ -74,6 +81,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 8,
     image: tassle,
     productTitle: "Brown Tassels Croc Mens Loafers",
     productPrice: "$190.75",
@@ -81,6 +89,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 9,
     image: pointer,
     productTitle: "Pointed toe women’s flat",
     productPrice: "$60.45",
@@ -88,6 +97,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 10,
     image: unisex,
     productTitle: "Unisex Lace up Sneakers",
     productPrice: "$70.45",
@@ -95,6 +105,7 @@ const productsArray = [
     review: 12,
   },
   {
+    id: 11,
     image: oxford,
     productTitle: "Oxford male shoe",
     productPrice: "$90.0",
@@ -102,6 +113,7 @@ const productsArray = [
     review: 17,
   },
   {
+    id: 12,
     image: milliano,
     productTitle: "Men milano fringe loafers",
     productPrice: "$206.5",
@@ -109,6 +121,7 @@ const productsArray = [
     review: 21,
   },
   {
+    id: 13,
     image: flat,
     productTitle: "Women flat shoes",
     productPrice: "$148.5",
@@ -116,6 +129,7 @@ const productsArray = [
     review: 21,
   },
   {
+    id: 14,
     image: crystal,
     productTitle: "Women Crystal tuscany heels",
     productPrice: "$148.5",
@@ -123,6 +137,7 @@ const productsArray = [
     review: 21,
   },
   {
+    id: 15,
     image: suede,
     productTitle: "Women mix suede leather heels",
     productPrice: "$156.5",
@@ -130,6 +145,7 @@ const productsArray = [
     review: 21,
   },
   {
+    id: 16,
     image: armani,
     productTitle: "Women armani flat shoes",
     productPrice: "$148.5",
@@ -137,6 +153,7 @@ const productsArray = [
     review: 21,
   },
   {
+    id: 17,
     image: casual,
     productTitle: "Casual fashion unisex sneakers",
     productPrice: "$78.5",
@@ -144,6 +161,7 @@ const productsArray = [
     review: 21,
   },
   {
+    id: 18,
     image: santiago,
     productTitle: "Santiago Men’s shoe",
     productPrice: "$97.9",
@@ -171,7 +189,7 @@ function Product() {
         {productsArray.map((product) => {
           return (
             <Link to="/listing/">
-              <ProductMap productObj={product} key={product.productTitle} />
+              <ProductMap productObj={product} key={product.id} />
             </Link>
           );
         })}
@@ -183,9 +201,10 @@ function Product() {
     return (
       <div className="listings">
         <div className="listings-flex">
-          <img src={productObj.image} alt="images" />
-          <hr />
-          <img className="like" src={productObj.like} alt="like" />
+          <div className="img-prep">
+            <img src={productObj.image} alt="images" />
+            <img className="like" src={productObj.like} alt="like" />
+          </div>
           <div className="product-review-star">
             <p>{productObj.productTitle}</p>
             <div className="review-star">

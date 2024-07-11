@@ -10,6 +10,10 @@
   padding-top: 1em;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -76,4 +80,39 @@ nav .flex {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+/* media query for tab should start from 700-1300px while mobile take the smallest but bigger screen start from 1301 */
+/* tab here */
+@media (max-width: 1100px) {
+  .unothered-list,
+  .header-comp {
+    gap: 24.57px;
+  }
+
+  .list-link {
+    font-size: 14.359px;
+  }
+
+  .list-items-signup {
+    padding: 7.205px 29.473px;
+  }
+
+  .signup,
+  .login {
+    font-size: 13px;
+  }
+}
+
+/* mobile here */
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .account,
+  .navbar ul,
+  .logo {
+    display: none;
+  }
 }

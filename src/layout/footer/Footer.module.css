@@ -9,9 +9,9 @@
 }
 
 .footCatFlex {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
-  gap: 77px;
+  justify-content: space-between;
   margin: 43.58px 0;
 }
 
@@ -58,10 +58,11 @@
 
 .formSub {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 0;
 }
 
-.formSub button {
+.btn_sub {
   padding: 0.4em 1em;
   border-radius: 0px 5px 5px 0px;
   border: 3px solid #163b5c;
@@ -71,14 +72,14 @@
   color: #fff;
 }
 
-input {
+.input {
   border-radius: 0px 5px 5px 0px;
   background: rgba(255, 255, 255, 0.2);
   border: none;
-  padding: 1.2em 1.5em;
+  padding: 1.2em 2em;
 }
 
-input::placeholder {
+.input::placeholder {
   color: #fff;
   font-size: 21px;
   font-weight: 500;
@@ -86,18 +87,22 @@ input::placeholder {
 }
 
 .social,
-.copyright,
 .socialCopyright {
   margin-top: 2.5em;
   display: flex;
   align-items: center;
-  gap: 24.54px;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin-top: 2.5em;
+  display: flex;
+  align-items: center;
+  gap: 16.86px;
 }
 
 .socialCopyright {
-  gap: 338.72px;
   margin-top: 0;
-  /* border: 2px solid red; */
 }
 
 .copyright p {
@@ -120,4 +125,69 @@ input::placeholder {
   position: absolute;
   top: 17%;
   left: 17%;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    padding: 2em;
+  }
+
+  .heading {
+    font-size: 18.411px;
+  }
+
+  .linkList {
+    font-size: 18.411px;
+  }
+
+  .phone span,
+  .mail span {
+    font-size: 18.411px;
+  }
+
+  .copyright {
+    gap: 8.86px;
+  }
+
+  .contact p {
+    display: none;
+  }
+
+  .socialCopyright {
+    gap: 40px;
+  }
+
+  .formSub {
+    display: none;
+  }
+}
+
+/* mobile here */
+@media (max-width: 429px) {
+  .heading {
+    font-size: 18.11px;
+  }
+
+  .footCatFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7.085px;
+    margin: 12px 0;
+  }
+  .unotherList {
+    gap: 3.16px;
+  }
+  .phone,
+  .mail {
+    display: none;
+  }
+  .socialCopyright,
+  .copyright {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .social {
+    gap: 27.1px;
+  }
 }

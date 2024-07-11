@@ -4,11 +4,13 @@ import logo from "../../asset/images/logo2.svg";
 import search from "../../asset/images/search-bar.svg";
 import account from "../../asset/images/account.svg";
 import cart from "../../asset/images/cart.svg";
+import menu from "../../asset/images/align-justify.svg";
 
 function Header() {
   return (
     <div className="wrap">
       <header className="header">
+        <img className="menu-btn" src={menu} alt="menu button" />
         <div className="logo">
           <img className="logo-shoe" src={logo} alt="logo" />
           <p className="craft">Craft Lux</p>
